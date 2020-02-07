@@ -1,0 +1,207 @@
+.items
+    width: areaWidth 
+    height auto
+    margin: 0 auto 30px
+    display: flex
+    justify-content: space-between
+    flex-wrap: wrap
+
+    .item
+        itemWidth = 200px
+
+        flex: 0 1 auto
+        width: itemWidth
+        min-height: 400px
+        padding: 30px 30px 40px
+        text-align: center
+        display: flex
+        // justify-content: center
+        flex-direction: column
+        border-radius: 10px
+        box-shadow: 0 3px 6px rgba(#000000, 0.3)
+        margin: 20px
+        position relative
+
+        .pic
+            position relative
+            margin-bottom: 20px
+            width: 100%
+            height 140px
+            overflow hidden
+            background-size: 40% auto
+            border-radius: 4px
+            
+            img
+                // display: none
+                width: auto
+                height 100%
+                position: absolute
+                top: 50%
+                left: 50%
+                transform: translate(-50%, -50%)
+        .text
+            font-size: 20px
+            font-weight 400
+            line-height: 30px
+            margin-bottom: 10px
+
+        .abs
+            min-height: 96px
+            height auto
+            // margin-bottom: 20px
+            font-size: 14px
+
+        .subTitle
+            padding-top: 12px
+            padding-bottom: 20px
+            height: 56px
+            border-top: #cccccc 1px solid 
+            font-size: 16px
+            line-height 24px
+            word-break: break-all
+            word-wrap: break-word
+            position: absolute
+            bottom: 0
+            left: 50%
+            transform: translateX(-50%)
+            width: itemWidth
+
+
+.items-col   
+    width: areaWidth
+    height 50px
+    margin: 40px auto 20px
+    background-position: center center
+    background-repeat: no-repeat
+
+.col1Title
+    background-image: url(col1.png)
+.col2Title
+    background-image: url(col2.png)
+.col3Title
+    background-image: url(col3.png)
+.col4Title
+    background-image: url(col4.png)
+// .col5Title
+//     background-image: url(col5.png)
+
+/**
+navBtn-guan.png
+navBtn-pin.png
+navBtn-shang.png
+navBtn-tan.png
+navBtn-ting.png
+navBtn-xue.png
+navBtn-yi.png
+navBtn-ying.png
+navBtn-yue.png
+navBtn-zhan.png
+*/
+
+// .navBtn-guan
+//     background-image: url(navBtn-guan.png)
+//     &:hover
+//     &.active
+//         background-image: url(navBtn-guan-active.png)
+// .navBtn-pin
+//     background-image: url(navBtn-pin.png)
+//     &:hover
+//     &.active
+//         background-image: url(navBtn-pin-active.png)
+// .navBtn-shang
+//     background-image: url(navBtn-shang.png)
+//     &:hover
+//     &.active
+//         background-image: url(navBtn-shang-active.png)
+// .navBtn-tan
+//     background-image: url(navBtn-tan.png)
+//     &:hover
+//     &.active
+//         background-image: url(navBtn-tan-active.png)
+// .navBtn-ting
+//     background-image: url(navBtn-ting.png)
+//     &:hover
+//     &.active
+//         background-image: url(navBtn-ting-active.png)
+// .navBtn-xue
+//     background-image: url(navBtn-xue.png)
+//     &:hover
+//     &.active
+//         background-image: url(navBtn-xue-active.png)
+// .navBtn-yi
+//     background-image: url(navBtn-yi.png)
+//     &:hover
+//     &.active
+//         background-image: url(navBtn-yi-active.png)
+// .navBtn-ying
+//     background-image: url(navBtn-ying.png)
+//     &:hover
+//     &.active
+//         background-image: url(navBtn-ying-active.png)
+// .navBtn-yue
+//     background-image: url(navBtn-yue.png)
+//     &:hover
+//     &.active
+//         background-image: url(navBtn-yue-active.png)
+// .navBtn-zhan
+//     background-image: url(navBtn-zhan.png)
+//     &:hover
+//     &.active
+//         background-image: url(navBtn-zhan-active.png)
+
+.is-mobile
+    .colA
+        // display: inline
+        width: 100%
+
+    .items-col
+        // border: red 1px solid
+        // border-radius: 10px
+        // width: 92%
+        // height 90px
+        margin: 20px auto 10px
+        // padding: 10px 0
+        background-size: auto 50% 
+        background-position: 54% center
+        // flex-direction: column
+        // justify-content center
+        // line-height: 60px
+
+        // &:after
+        //     display: inline-block
+        //     line-height: 30px
+
+    .col1
+        .more
+            padding: 0 20px
+
+    .items
+        width: 100%
+        // width: areaWidth 
+        // margin: 0 auto 30px
+        // display: flex
+        justify-content: space-around
+        // flex-wrap: wrap
+
+        .item
+            width: 100%
+            height auto
+            min-height: auto
+            // padding: 15px 50px
+            // text-align: center
+            .pic
+                height 153px
+
+                img
+                    width: 100%
+                    height auto 
+            .abs
+                min-height: max-content
+                margin-bottom: 20px
+
+            .subTitle
+                position relative
+                width: 100%
+                height: auto
+                padding-top: 20px
+                padding-bottom: 0

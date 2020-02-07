@@ -1,0 +1,103 @@
+rotWidth = var(--moo-rotWidth)
+rotHeight = 420px
+
+.rot
+    position relative
+    overflow hidden
+    background-color: var(--moo-rotBg)
+    border-radius: 4px
+    margin: 0
+    
+    &
+    .item
+    .pic
+    .pic a
+        width: rotWidth
+        height: rotHeight
+        overflow hidden
+        
+    .item
+        position relative
+
+        .pic
+            pic()
+
+            img
+                img()
+
+        .title
+            title()
+
+            .text
+                width: 80%
+                margin-left: 1em
+                // margin-top: 10px
+                overflow hidden
+
+            &
+            a
+                font-size: 16px
+                color: #ffffff
+               
+    btnWidth = 40px
+    .rot-prev
+    .rot-next
+        position: absolute
+        width: btnWidth
+        height 62px
+        top: 50%
+        margin-top: -(@height / 2)
+        z-index 3
+        cursor pointer
+        // display: none
+        transition: all 0.5s
+        background-size: auto
+        color: #ffffff
+    
+        &:hover
+            opacity 1
+
+        &:active
+            opacity 0.3
+
+        &.swiper-button-disabled
+            opacity 0.3 !important
+            pointer-events: visible
+            cursor: default
+
+    .rot-prev
+        left - btnWidth
+        // background-image: url(rot-icon-prev.png)
+
+    .rot-next
+        right - btnWidth
+        // background-image: url(rot-icon-next.png)
+    
+    &:hover
+        .rot-prev
+            left 0
+        .rot-next
+            right 0
+
+    .swiper-pagination
+        bottom: 12px
+        left: auto
+        right: 10px
+        width: auto
+
+    .swiper-pagination-bullet
+        width: 8px
+        height: 8px
+        display: inline-block
+        border-radius: 100%
+        background: var(--moo-rot-bullet)
+        opacity: 1
+
+    .swiper-pagination-bullet-active 
+        background: var(--moo-rot-bullet-active)
+        
+
+
+// .is-mobile  
+// move in is-mobile.styl
+    

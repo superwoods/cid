@@ -1,0 +1,112 @@
+.col2
+    col2Height = 490px
+    col2LWidth = 680px
+    col2RWidth = 288px
+
+    .area
+        height col2Height
+        padding-bottom: 65px
+    
+    .l
+    .r
+        background-color: #ffffff
+        height: col2Height
+
+    .l
+        width: col2LWidth
+        
+        .col-bg-box
+            margin-bottom: 33px
+
+            .bg-white
+                width 298px
+        
+    .r
+        width: col2RWidth
+        height col2Height
+        background-image: url(banner-bg2.png)
+        background-position: center 0
+        background-repeat: no-repeat
+        background-size: auto col2Height
+
+    .l-in
+        position relative
+
+        .l-in-l
+        .l-in-r
+            position: absolute
+            top: 0
+
+        .l-in-l
+            width: 240px
+            left: 0
+
+            .title
+                font-size: 16px
+                line-height: 28px
+                max-height: @line-height
+                overflow hidden
+                padding: 6px
+                background-color: #f5f5f5
+                margin-bottom: 20px
+                font-weight: 600
+
+        .l-in-r
+            width: 415px
+            right: 0
+
+            .title
+                font-size: 18px
+                line-height: 32px
+                max-height: @line-height
+                overflow hidden
+                font-weight: 600
+                display: flex
+                align-items: baseline
+                padding-left: 1em
+                position relative
+                margin-bottom: 12px
+
+                &:before
+                    content: ''
+                    display: block
+                    width: 4px
+                    height 18px
+                    background-color: titleBeforeBgColor
+                    position: absolute
+                    left 0
+                    top: 6px
+
+                &
+                & a
+                    color: #03114d
+
+            .abs
+                margin-bottom: 24px
+                padding-bottom: 18px
+                text-indent: 2em
+                color: #999999
+                line-height: 24px
+                border-bottom: 1px absBorderBottomColor dashed
+
+                a
+                    color: absAColor
+
+    .pic
+        width: 100%
+        height 135px
+        overflow hidden
+        position relative
+        background-image: url(/bundle/icon-logo.png)
+        background-position: center center
+        background-size: 30% auto
+        background-color: picColor
+        background-repeat: no-repeat
+
+        img
+            position: absolute
+            width: auto
+            height 100%
+            top: 50%
+            left: 50%
+            transform: translate(-50%, -50%)

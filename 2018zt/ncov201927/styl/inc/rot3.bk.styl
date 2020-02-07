@@ -1,0 +1,152 @@
+
+rot3ItemBoxHeight = 459px
+
+.rot3BoxBox
+    padding: 36px 0
+    margin-bottom: 50px
+
+.rot3Box
+    position: relative
+    width: (1174px + 60px * 2)
+    height rot3ItemBoxHeight
+    margin: 0 auto
+
+    .rot3
+        width: 1174px
+        height 460px
+        margin: 0 auto
+        // border: 1px #ffffff solid
+
+    .rot3-prev
+    .rot3-next
+        color: #c30e11
+        outline: none 
+
+    .rot3-prev
+        // 
+    .rot3-next
+        margin-right: 0
+
+    .rot3-pagination
+        left: 50%
+        transform: translateX(-50%)
+        // width: 50%
+        // border: 1px solid #ffffff
+
+        .swiper-pagination-bullet
+            outline: none
+            width: 60px
+            height 4px
+            border-radius: (@height / 2)
+            background-color: #e4e4e4
+            opacity 1 
+
+        .swiper-pagination-bullet-active
+            background-color: #c30e11
+
+        .swiper-pagination-bullet+.swiper-pagination-bullet
+            margin-left: 6px
+
+
+    .itemBox
+        display: flex
+        flex-direction: column
+        align-items: center
+        justify-content: space-between
+        position relative
+        height rot3ItemBoxHeight
+        overflow hidden
+        background-color: #c30e11
+
+        .pic
+            pic()
+            position relative
+            flex: 0 1 auto
+
+            &
+            & a
+                width 100%
+                height 218px
+
+            img
+                img()
+                height auto
+                width: 100%
+
+        .title
+            flex: 1 0
+            title()
+            width auto
+            background: none
+            position: static
+            margin: 0 20px
+            display: flex
+            flex-direction: column
+            align-items: center
+            justify-content: center
+            position relative
+
+            &
+            & a 
+                color #FFF
+                
+            .text
+                text()
+                font-size: 26px
+                line-height: 34px
+                margin-bottom: 16px
+                font-weight: 600
+                max-height (@line-height * 2)
+                overflow hidden
+                text-align: center
+
+            .abs
+                line-height: 26px
+                font-size: 16px
+                font-weight: 400
+                height (@line-height * 4)
+                min-height: @height
+                overflow hidden
+
+.is-mobile
+    .rot3-prev
+    .rot3-next
+        display: none
+
+    .rot3-pagination
+        // left: 50%
+        // transform: translateX(-50%)
+
+        .swiper-pagination-bullet
+            // outline: none
+            width: 20px
+            // height 4px
+            // border-radius: (@height / 2)
+            // background-color: #e4e4e4
+            // opacity 1 
+
+        // .swiper-pagination-bullet-active
+        //     background-color: #c30e11
+
+        .swiper-pagination-bullet+.swiper-pagination-bullet
+            margin-left: 3px
+
+    .rot3BoxBox
+        padding: 0
+        margin-bottom: 0
+
+    .rot3Box
+        width: auto
+
+        .rot3
+            width: 100%
+
+    .more
+        width: 90%
+
+    .rot3Box .itemBox .pic img
+        height 100%
+        width: auto
+    
+                
+

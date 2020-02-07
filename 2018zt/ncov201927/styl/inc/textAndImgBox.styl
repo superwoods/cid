@@ -1,0 +1,113 @@
+.textAndImgBox
+    min-height: 500px
+    margin: 0 auto
+
+// img
+//     display: none
+
+.textAndImg
+    width: areaWidth
+    margin: 0 auto
+
+    picWidth = 140px
+
+    .pic
+        position relative
+        width: picWidth
+        height @width
+        border-radius: 4px
+        overflow hidden
+        background-size: 50% auto
+
+        img
+            width: picWidth
+            height @width 
+    .text
+        text-align: center
+        font-size: 16px
+        font-weight: 400
+        
+        &
+        & a
+            color: #666666
+
+    &-in // .textAndImg-in
+        display: flex
+        justify-content: center
+        align-items: center
+        height auto
+        width: 81%
+        border-radius: 20px
+        box-shadow: 0 3px 16px rgba(#000000, 0.3)
+        margin: 50px auto 70px
+        padding: 50px 20px
+
+    .leftSide
+    .rightSide
+        display: flex
+        flex-direction: column
+        align-items: center
+        // flex: 1 0 auto
+        // margin: 20px auto
+        // border: red 1px solid
+        justify-content: center
+    
+    .leftSide
+        margin-right: 10px
+        margin-left: 70px
+
+        .pic
+            margin: 0 auto 30px
+            
+
+        .text
+            margin: 0 30px
+
+            &
+            & a
+                color: #007AFF
+
+    .mobileBg
+        width: 233px
+        height 468px
+        background: url(mobileBg.png)
+
+    .rightSide
+        width: 60%
+
+        .abs
+        .pic
+        .picBox
+            margin: 0 auto
+            
+        .abs
+        .picBox
+            width: 80%
+
+        .abs
+            max-height: 400px
+            margin-bottom: 40px
+
+        .pic
+            margin-bottom: 12px
+        
+        
+.is-mobile
+    .textAndImg
+        width: 100%
+
+        &-in
+            flex-direction: column
+            padding: 30px 10px
+            margin: 30px auto 50px
+            width: 86%
+
+        .leftSide
+            margin-right: 0
+            margin-left: 0
+
+        .rightSide
+            width: 100%
+            margin-top: 30px
+        
+    

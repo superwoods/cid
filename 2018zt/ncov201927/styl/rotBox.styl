@@ -1,0 +1,110 @@
+.rotBox
+    position relative
+    height auto
+
+    rotBoxHeight = 540px
+    rotBox_itemHeight = rotBoxHeight / 2 - 45px
+
+    .rotBox-container
+        width: 1080px
+        height rotBoxHeight
+        margin: 0 auto
+        position relative
+
+    .rot-prev
+    .rot-next
+        background-color: var(--f7-theme-color)
+        color: #ffffff
+        transform: translateY(-50%)
+        border-radius: 6px
+        outline: 0
+        
+        &:hover
+            opacity 0.8
+
+    .rot-prev
+        padding: 20px 8px 20px 6px
+        left: 0;
+        right: auto;
+
+    .rot-next
+        padding: 20px 6px 20px 8px
+        left: auto;
+        right: 0;
+        
+
+    .list
+        justify-content: flex-start
+        // flex-wrap: wrap;
+        padding: 0;
+        margin: 0 auto;
+
+
+    .item
+        width: 100%
+        height rotBox_itemHeight
+        margin: 0
+
+        li.noPic:before
+            content: ''
+            display: flex
+            width: 94%
+            height rotBox_itemHeight - 20
+            pic()
+            position relative
+            border: 8px solid var(--f7-theme-color)
+            border-radius: 4px;
+            top: 0;
+            text-align: center
+            align-items: center
+            justify-content: center
+
+        li
+            width: auto
+            height 100%
+            margin: 0
+            padding: 0
+            list-style: none
+
+            &:before
+                display: none
+
+            .pic
+                width: 94%
+                height rotBox_itemHeight - 20
+                pic()
+                position relative
+                border: 8px solid var(--f7-theme-color)
+                border-radius: 4px;
+
+                a
+                    width: 100%
+                    height 100%
+
+                img
+                    img()
+                    // width: 100%
+                    // height auto
+
+            .title
+                position: static
+                text-align: center
+                font-weight: 400
+                font-size: 16px
+                height 38px
+                overflow hidden
+                width: 96.5%;
+
+    .isLoadingTxt
+        display: inline-flex
+        align-items: center
+
+.is-mobile
+    .rotBox
+        .rotBox-container
+            width: 90%
+            overflow: visible
+            margin-left: 0
+            .list
+                li
+                    height 270px

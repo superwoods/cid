@@ -1,0 +1,119 @@
+areaWidth = 1200px
+
+col1Color = #333333
+col1AbsColor = #666666
+
+blueColor = rgb(195, 14, 17)
+dotColor = rgb(195, 14, 17)
+navBgColor = rgb(195, 14, 17)
+// rotSwiperPaginationBulletActiveBgColor = navBgColor
+bannerBgColor = navBgColor
+footerBgColor = navBgColor
+
+footerColor = navBgColor
+footerInsideLine_n_color = rgba(#ffffff, 0.3) // 小竖线颜色 #1aabd1
+footerTextColor = #ffffff
+footerTextHoverColor = #ffffff !important
+
+
+picColor = dotColor
+titleBeforeBgColor = dotColor
+absBorderBottomColor = dotColor
+absAColor = dotColor
+
+mainColorBg = linear-gradient(to right,#032e60 0,#185299 50%,#032e60 100%);
+
+LMRWidth = 320px
+LMRHeight = 285px
+
+mobileWidth = 90%
+
+contentBoxLeftWidth = 66%
+contentBoxRightWidth = 26%
+
+.theme-moo
+    --f7-theme-color: #1b79d9 // rotBig
+    --moo-color: #1b79d9 // rotPicTitleAbsAddSidebar
+    --f7-theme-color-rgb: 33,150,243
+    --f7-theme-color-shade: #e2c172 // #c30e11;
+    --f7-theme-color-tint: #e2c172 // #c30e11;
+    --spa-color-grayC: #cccccc
+    --spa-color-gray9: #999999
+    --spa-color-gray6: #666666
+    --spa-color-gray3: #333333
+    --moo-color-listBox #e27a00
+    --moo-color-footerTextAndImg #ffffff
+    --moo-color-footerN rgba(#ffffff, 0.3)
+    --moo-footerBg #1b79d9
+    --moo-bannerBg #1b79d9
+    --moo-itemBoxBg #f2f2f2
+    --moo-swiper-button #ffffff
+    --moo-rotWidth 740px
+    --moo-col1_right 410px
+    --moo-topBigTitle-color #c11d24 !important
+    --moo-spaColTitle_color #1b79d9
+    --moo-spaColTitle_afterBg #f4dbb2
+    --moo-navBg #1b79d9
+    --moo-nav-borderTopColor #ffffff
+    --moo-widthTiny 1000px
+    --moo-widthTiny-rotWidth 600px
+    --moo-widthTiny-col1_right 360px
+    --moo-rotBg #cccccc
+    --moo-rot-bullet:#ffffff
+    --moo-rot-bullet-active: orange
+    --moo-roBig-bullet:#ffffff
+    --moo-roBig-bullet-active: orange
+
+navBg()
+    // background: -moz-linear-gradient(left, rgba(30,42,179,1) 0%, rgba(188,45,149,1) 100%);
+    // background: -webkit-linear-gradient(left, rgba(30,42,179,1) 0%,rgba(188,45,149,1) 100%);
+    // background: linear-gradient(to right, rgba(30,42,179,1) 0%,rgba(188,45,149,1) 100%);
+    background-image: url(nav.png)
+    background-position: center center
+    background-size: auto 100%
+    background-repeat: no-repeat
+
+.pic
+    background-image: url(/bundle/icon-logo.png)
+    background-position: center center
+    background-size: auto
+    background-color: #cccccc
+    background-repeat: no-repeat
+    z-index 1
+    position: absolute
+
+pic()
+    background-image: url(/bundle/icon-logo.png)
+    background-position: center center
+    background-size: auto
+    background-color: #cccccc
+    background-repeat: no-repeat
+    z-index 1
+    position: absolute
+    overflow hidden
+
+img()
+    position: absolute
+    width: auto
+    height: 100%
+    top: 50%
+    left: 50%
+    transform: translate(-50%, -50%)
+
+title()
+    position: absolute
+    width: 100%
+    bottom: 0
+    left: 0
+    z-index 2
+    background: linear-gradient(to bottom, rgba(0,0,0,0) 0%,rgba(0,0,0,1) 100%)
+    height: 50px
+    line-height: @height
+    font-weight: 400
+
+text()
+    margin: 0 1em
+    width 90%
+    color: #ffffff
+
+    

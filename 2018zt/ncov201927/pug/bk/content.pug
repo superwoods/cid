@@ -1,0 +1,214 @@
+
+- const title = '细览'
+
+doctype html
+html
+    head
+        meta(charset='utf-8')
+        meta(http-equiv='X-UA-Compatible', content='chrome')
+        meta(name='renderer', content='webkit')
+
+        title= title
+        meta(name='description', content=' ')
+        meta(name='apple-mobile-web-app-title', content= title)
+        meta(name='viewport', content='width=device-width, initial-scale=1')
+
+
+        script(src="/bundle/browser.min.js")
+
+        //- link(rel='stylesheet', href='bundle/index.css')
+        link(rel='stylesheet', href='bundle/content.css')
+
+    body
+
+        <!-- body static START -->
+        .box.banner-bg
+            a.banner(href='#', target='_blank')
+                h1.hide= title
+                img.banner-title1(src='/bundle/banner-title1.png', alt= title)
+                img.banner-title2(src='/bundle/banner-title2.png', alt= title)
+
+        .nav
+            .nav-in
+                .btn-box
+                    a(href='#mark1', data-name='mark1', nid='11190945') 法院简介
+                    a(href='#mark2', data-name='mark2', nid='11190944') 新闻中心
+                    a(href='#mark3', data-name='mark3', nid='11191926') 司法改革
+                    a(href='#mark4', data-name='mark4', nid='11190946') 庭审直播
+                    a(href='#mark5', data-name='mark5', nid='11190947') 专题报道
+                    a(href='#mark6', data-name='mark6', nid='11190948') 法律法规
+                    a(href='#mark7', data-name='mark7', nid='11190948') 裁判文书
+                    a(href='#mark8', data-name='mark8', nid='11190948') 在线服务
+
+        
+        .contentBox
+
+            .contentTxtBox
+                .shareBox
+                    .shareBoxCol 分享到
+                    .shareBtn
+                        .shareBtnItem.icon-wx
+                            .txt 微信
+                            .qrcodeBox
+                                .qrcodeBox-in#qrcode
+                        //- .shareBtnItem.icon-wb
+                            .hide 微博
+
+                        
+                .bigTitle
+                    h1
+                        | 一二三四五六七八九十一二三四五六七八九十一
+                .subTitle
+                    | 2019-01-16 15:50:41 | 来源：人民法院报 | 作者：陈建华
+            
+                .main-content-box
+                    p
+                        font(face='微软雅黑')
+                        | 中国雄安官网3月19日电 3月17日，雄安新区召开党工委委员（扩大）会议，传达学习贯彻全国“两会”主要精神，以及省委常委会扩大会议和全省传达学习贯彻全国“两会”精神领导干部会议精神。会议还传达学习了省委、省政府集中整治违法违规建设破坏生态环境问题有关文件精神。省委常委、副省长，雄安新区党工委书记、管委会主任陈刚主持会议。
+                    p(align='center')
+                        font(color='navy', face='楷体')
+                        img(id='{95D50775-2A4F-497D-B1DF-70345F2B4CC2}', title='', style='HEIGHT: 474px; WIDTH: 800px', border='0', src='http://www.xiongan.gov.cn/2019-03/19/1210086051_15529645134731n.jpg', align='center', sourcename='本地文件', sourcedescription='编辑提供的本地文件')
+                    p(style='TEXT-ALIGN: center', align='center')
+                        font(color='navy', face='楷体') 会议现场。刘向阳 摄
+                    p(style='FONT-FAMILY: 微软雅黑')
+                        font(face='微软雅黑')
+                        | 会议指出，今年的全国“两会”是在迎接新中国成立70周年之际召开的一次十分重要的会议，举世瞩目，意义重大。习近平总书记在全国“两会”期间六次参加团组会议，发表了一系列重要讲话，为我们做好各项工作提供了根本遵循。李克强总理作的政府工作报告，栗战书委员长作的全国人大常委会工作报告，汪洋主席代表全国政协常委会作的工作报告，对去年工作的总结客观全面，对今年工作的部署系统科学，充分贯彻了以习近平新时代中国特色社会主义思想。王沪宁同志、赵克志同志参加了河北代表团审议并发表讲话，具有很强的针对性和指导性。省委第一时间召开常委会扩大会议和全省领导干部会议，对学习贯彻习近平总书记重要讲话和全国“两会”精神进行部署，新区上下要按照省委常委会扩大会议和全省领导干部会议精神，把学习贯彻习近平总书记重要讲话精神和全国“两会”精神作为当前和今后一段时期的一项重大政治任务抓紧抓实抓出成效。
+                    p(style='FONT-FAMILY: 微软雅黑; TEXT-ALIGN: center', align='center')
+                        font(color='navy', face='楷体')
+                        font(color='navy', face='楷体')
+                            img(id='{93483E79-CC6F-4338-B9E5-FEDE69B0D9E7}', title='', style='HEIGHT: 470px; WIDTH: 800px', border='0', src='http://www.xiongan.gov.cn/2019-03/19/1210086051_15529645135261n.jpg', sourcename='本地文件', sourcedescription='编辑提供的本地文件')
+                    p(style='FONT-FAMILY: 微软雅黑; TEXT-ALIGN: center', align='center')
+                        font(color='navy', face='楷体') 会议现场。刘向阳 摄
+                    p(style='FONT-FAMILY: 微软雅黑')
+                        font(face='微软雅黑')
+                        | 会议强调，今年是雄安新区规划落地实施的开局之年，也是新区启动大规模开发建设之年。新区各级各部门要深刻领会全国“两会”精神实质，把思想和行动统一到中央和省委、省政府的部署要求上来，树牢“四个意识”，坚定“四个自信”，坚决做到“两个维护”，以功成不必在我的精神境界和功成必定有我的历史担当，不折不扣抓好工作落实，确保雄安新区各项重点任务落到实处、取得实效。要凝心聚力，提振精神，自觉拿出苦干实干拼命干的实际行动，认真落实雄安新区规划纲要、总体规划、各专项规划和省委、省政府关于深入推进雄安新区规划建设的系列要求，扎实推进新区重大工程项目建设，努力创造“雄安质量”，建设“廉洁雄安”。要牢固树立以人民为中心的思想，高度重视、认真谋划和精心组织实施好雄安新区征迁安置工作，切实保障和改善民生，不断增强人民群众的获得感、幸福感、安全感。
+                    p
+                        font(face='微软雅黑')
+                        | 会议强调，新区各级各部门要坚决贯彻习近平生态文明思想，全面落实省委、省政府关于集中整治违法违规建设破坏生态环境问题的部署要求，认真开展侵占生态保护红线违法违规房地产项目排查整治，严厉打击自然资源领域违法违规行为，切实做到问题不查清不放过、整改不彻底不放过，为新区开发建设打下坚实基础。
+                        
+                .listBox
+                    .colBig
+                        | 推荐阅读
+                        
+                    ul.list
+                        li
+                            .titleAndDateBox
+                                .title
+                                    a(href="#" target="_blank") 一二三四五六七八九十一二三四五六七八九十
+                                .date 2019-03-20
+                        li
+                            .titleAndDateBox
+                                .title
+                                    a(href="#" target="_blank") 一二三四五六七八九十一二三四五六七八九十一二三四五六
+                                .date 2019-03-20
+                        
+                        each val in [1,2,3,4,5,6,7,8]
+                            li
+                                .titleAndDateBox
+                                    .title
+                                        a(href="#" target="_blank")= val + '一二三四五六七八九十一二三四五六七八九十一'
+                                    .date 2019-03-20
+                                .abs 
+                                    | 这是一个摘要这是一个摘要这是一个摘要这是一个摘要
+                                    a(href="#" target="_blank")= '[详细]'
+
+                    .moreBtn(data-max="5") 点击加载更多
+
+            .sidebar
+                .colBox
+                    .colTiny
+                        a(href="#") 标题标题标题标题
+                    .sidebarTitleBox
+                        .bigTitle
+                            a(href="#") 标题标题标题标题标题标题标题标题标题标题 
+                        .abs
+                            | 这是一个摘要这是一个摘要这是一个摘要这是一个摘要这是一个摘要这是一个摘要这是一个摘要这是一个摘要这是一个摘要这是一个摘要这是一个摘要这是一个摘要这是一个摘要这是一个摘要这是一个摘要这是一个摘要
+                            a(href="#" target="_blank")= '[详细]'
+                    ul.list
+                        each val in [1,2,3,4,5]
+                            li
+                                .title
+                                    a(href="#" target="_blank")= val + '标题标题标题标题'
+                .colBox
+                    .colTiny
+                        a(href="#") 标题标题
+                    .pic
+                        a(href="#")
+                            img(src="demo/demo3.png", alt="")
+                        .videoSrc
+                            | 视频地址
+
+        
+
+        //- #mark1.col1
+            .area(data-tips='新闻聚焦', data-name='mark1', nid='11190945')
+                .content
+                    include ./inc/rot.pug
+                    include ./inc/headline.pug
+
+        //- .icons-col
+            a(href="#" target="_blank") 司法公开服务平台
+        //- .icons
+            each val in [1,2,3,4,5,6,7,8,9,10,11,12]
+                .item
+                    a(href="#" target="_blank")
+                        .pic
+                            img(src= 'bundle/icon' + val + '.jpg', alt= val)
+                        .text= val + '名字'
+
+        //- .icons2
+            each val in [1,2,3,4]
+                .item
+                    a(href="#" target="_blank")
+                        .pic
+                            img(src= 'bundle/i' + val + '.jpg', alt= val)
+        
+        //- //- #mark2
+        //- include ./inc/mark2
+        
+        //- //- mark3 (.mark2)
+        //- include ./inc/mark3
+
+        //- //- #mark4 & #interview-rot
+        //- include ./inc/mark4-interview-rot
+        
+        //- //- #mark5 & #media-rot
+        //- include ./inc/mark5-media-rot
+
+        //- //- #mark6
+        //- include ./inc/mark6
+        
+
+
+        //- ------------- this is the footer
+        .nav2
+            .nav2-in
+                .col-title 特别推荐
+                //- a(href='#', title= title, target='_blank')
+                    //- img.logo(src='http://www.xiongan.gov.cn/bundle/icon-logo.png', alt='http://www.xiongan.gov.cn')
+                .btn-box
+                    a(href='#') 重要讲话数据库
+                    a(href='#') 新华网
+                    a(href='#') 中国雄安官网
+                    a(href='#') 中国共产党新闻网
+                    a(href='#') 共产党员网
+                    a(href='#') 中央纪委国家监委网站
+                    a(href='#') 龙江先锋网
+                    a(href='#') 龙江机关党建网
+
+        //- footer
+        include ./inc/footer
+        
+        <!-- body static END -->
+        
+
+        <!-- body scripts START -->
+        script(src='/bundle/jq.js')
+        script(src='/bundle/qrcode.min.js')
+
+        //- script(src='bundle/swiper.min.js')
+        //- script(src='bundle/index.js')
+        script(src='bundle/content.js')
+        
+        //- script(src='/bundle/dev/xa-labs-analytics.min.js')
+        <!-- body scripts END -->

@@ -1,0 +1,19 @@
+.rotPic3Box.rot3BoxBox#rotPic3
+    .rotPic3.rot3Box
+        .swiper-container.rot3
+            .swiper-wrapper
+                .isNoContent 正在努力加载...
+                //- each rot3Val in [1,2,3]
+                    <!-- 子循环 开始 -->
+                    .swiper-slide.itemBox
+                        .pic
+                            a(href='http://www.xiongan.gov.cn/2018-10/18/c_129974315.htm', target='_blank')
+                                img(src= 'demo/demo' + rot3Val + '.png', alt='')
+                        .title
+                            .text
+                                a(href='http://www.xiongan.gov.cn/2018-10/18/c_129974315.htm', target='_blank')= rot3Val + '一二三四五六七八九十一二三四五六七八九十一二三四五六七八九十'
+                            //- .abs 一二三四五六七八九十一二三四五六七八九十一二三四五六七八九十一二三四五六七八九十一二三四五六七八九十一二三四五六七八九十一二三四五六七八九十一二三四五六七八九十一二三四五六七八九十一二三四五六七八九十
+                    <!-- 子循环 结束 -->
+        .swiper-pagination.rot3-pagination
+        .swiper-button-prev.rot3-prev
+        .swiper-button-next.rot3-next

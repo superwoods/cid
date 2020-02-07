@@ -1,0 +1,138 @@
+.col1
+    // .big-title
+    //     margin-bottom: 20px
+    //     color: col1Color
+    .area
+        padding-top: 30px
+        // padding-right: 100px
+        // padding-bottom: 35px
+        // padding-left: 100px
+        // margin-bottom: 30px
+
+    .tiny-title
+    .tiny-title a
+        color: var(--moo-color)
+        // font-size: 20px;
+        // line-height: 32px;
+        font-size: 28px
+        line-height: 42px
+        // margin-bottom: 16px;
+        font-weight: 400;
+
+    .abs
+        color: col1AbsColor
+        font-size: 14px
+        margin-top: 14px
+        // font-weight: 600
+    
+    .list
+        font-weight: 400
+        margin-top: 0
+        margin-bottom: 0
+
+        &
+        a
+            color: col1Color
+
+        &
+        & li
+            line-height: 28px
+
+        & li:before
+            top: 12px
+
+    .content
+        // height rotHeight
+        // position: relative
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+
+        .rot
+            // border: 10px var(--f7-theme-color) solid
+            // position: absolute
+            // top: 0
+            // left: 0
+            // right: auto
+        
+        .right
+            display: flex
+            flex-direction: column
+            justify-content: center
+            // position: absolute
+            // top: 0
+            // right: 0
+            // left: auto
+            // overflow hidden
+            // padding-top: 20px
+            // padding-bottom: @padding-top
+            // padding-left: 30px 
+            // padding-right: @padding-left
+            width var(--moo-col1_right) //- @padding-left - @padding-right
+            // height rotHeight //- @padding-top - @padding-bottom
+            // background: #f9f9f9
+            // .tiny-title
+            //     &
+            //     & a
+            //         font-size: 26px
+            //         line-height: 38px
+
+            .line
+                height 0
+                // background: #cccccc
+                margin-top: 14px
+                margin-bottom: 14px
+                border-bottom: 1px #cccccc dotted 
+
+        .col
+            margin-bottom: 20px        
+
+
+.spBox1
+    .spArea
+        position relative
+        width: 1000px
+        padding: 20px 50px 10px
+
+        beforeBorderWidth = 0
+        beforeWidth = 1000px + 50px * 2 - beforeBorderWidth * 2
+        beforeHeight = 800px
+
+        &:before
+        &:after
+            content: ''
+            display: block
+            pointer-events: none
+            position: absolute
+            width: beforeWidth
+                        
+        &:before
+            background-color: #ffffff
+            border-radius: 8px
+            top: 0
+            left 0
+            border: beforeBorderWidth var(--moo-color) solid
+            border-bottom: none
+            z-index 1
+            height beforeHeight
+
+        &:after
+            background: linear-gradient(to bottom, rgba(255,255,255,0) 0%,rgba(255,255,255,1) 58%,rgba(255,255,255,1) 100%);
+            z-index 2
+            height: 800px
+            width: beforeWidth + beforeBorderWidth * 2
+            top: 150px
+            left: 0;
+
+        .more
+            width: 100%
+            margin-bottom: 0
+            position relative
+            z-index 4
+
+    .content
+        position relative
+        z-index 3
+
+
+

@@ -1,0 +1,133 @@
+.area2_area3
+    padding-top: 40px
+    padding-bottom: 179px
+
+    .col-bg-box
+        margin-bottom: 45px
+
+    .no-bg
+        background: none
+
+    .area
+        display: flex
+        justify-content: space-between
+    
+    .text-box
+        height 170px
+        background-color: #f5f5f5
+        .title
+            padding: 18px 0
+            line-height: 24px
+            height @line-height * 6
+            overflow hidden
+            margin: 0 auto
+            width: 90%
+            font-weight: 500
+
+            &
+            & a
+                color: #050b25
+                font-size: 16px
+
+    .pic
+        position: relative
+        z-index: 1;
+        background-image: url(/bundle/icon-logo.png);
+        background-position: center center;
+        background-size: 30% auto;
+        background-color: #ccc;
+        background-repeat: no-repeat;
+        top: 0
+        left 0
+        overflow hidden
+
+        // &:nth-child(2)
+        // &:nth-child(3)
+        //     width: 152px
+        //     height 86px
+        //     left: auto
+        //     right: 0
+
+        // &:nth-child(3)
+        //     top: auto
+        //     bottom: 0
+
+        img
+            position: absolute
+            top: 50%
+            left: 50%
+            transform: translate(-50%, -50%)
+            width: auto
+            height 100%
+
+    .area2
+        width: 525px
+        
+        .pic
+            height 272px
+
+            btnColor = #ee538e
+
+            &:after
+            &:before
+                content: ''
+                display: block
+                position: absolute
+                pointer-events: none
+                top: 50%
+                left: 50%
+                transform: translate(-50%, -50%)
+
+            &:after
+                width: 60px
+                height: @width
+                z-index 3
+                background-color: rgba(#000000, 0.5)
+                border: btnColor 2px solid
+                border-radius: 100%
+                box-shadow: 0 0 5px rgba(#000000, 0.3)
+
+            &:before
+                z-index 4
+                width: 0;
+                height: 0;
+                border-style: solid;
+                border-width: 15px 0 15px 24px;
+                border-color: transparent transparent transparent btnColor;
+                margin-left: 4px
+
+    .area3
+        width: 447px
+        
+        .content
+            display: flex
+            flex-wrap: wrap
+            justify-content: space-between
+
+        .pic
+            width: 215px
+            height @width 
+            margin-bottom: 12px
+
+        .last
+            background: #ee538e
+            display: flex
+            align-items: center
+
+            &
+            & a
+                color: #ffffff
+                font-size: 16px
+                line-height: 24px
+            a
+                width: 100px
+                text-align: right
+                display: block
+                margin: 0 auto
+
+            .more
+                display: block
+                text-align: right
+
+
+        

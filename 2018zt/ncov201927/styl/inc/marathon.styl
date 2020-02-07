@@ -1,0 +1,186 @@
+.marathon
+    
+    marathonHeight = 757px
+
+    padding-top: 45px
+    padding-bottom: 40px
+
+    .area
+        height marathonHeight + 130px
+
+    .col-bg-box
+        margin-bottom: 45px
+
+    .content
+        position: relative
+    .l
+    .r
+        position: absolute
+        top: 0
+
+    .l
+        width: 488px
+        height marathonHeight
+        left: 0
+        overflow hidden
+        background-image: url(/bundle/icon-logo.png);
+        background-position: center center;
+        background-size: 30% auto;
+        background-color: #ccc;
+        background-repeat: no-repeat;
+
+        img
+            position: absolute
+            top: 50%
+            left: 50%
+            transform: translate(-50%, -50%)
+            width: auto
+            height 100%
+
+    .r
+        width: 480px
+        right: 0
+
+    // .marathon-title-box
+    &-title-box
+        border: 2px solid #f0669b
+        margin-top: 32px
+        background-image: url(dot-top.png)
+        background-repeat: no-repeat
+        background-position: 6px 6px 
+        position relative
+
+        &:after
+            content: ''
+            display: block
+            width: 57px
+            height 54px
+            background-image: url(dot-bottom.png)
+            position: absolute
+            bottom: 6px
+            right: 6px
+            z-index 1
+
+        h2
+            width: 183px
+            height 53px
+            background-color: #ffffff
+            background-image: url(col-bg2-fat.png)
+            background-repeat: no-repeat
+            background-position: center bottom
+            position relative
+            padding-left: 6px
+            padding-right: 6px
+            margin: -30px auto 0 
+
+            &:before
+                content: ''
+                display: block
+                width: 143px
+                height 33px
+                background-image: url(col-title-saishijieshao.png)
+                position: absolute
+                bottom: 9px
+                left: 50%
+                margin-left:  - (@width / 2)
+
+        .text
+            padding: 10px 55px
+            color: #050b25
+            font-size: 16px
+            line-height: 30px
+            height @line-height * 5
+            overflow hidden
+            font-weight: 500
+            position relative
+            z-index: 2
+            text-indent: 2em
+
+    &-pic-box
+        position relative
+        height 180px
+        width: 100%
+        margin-top: 25px
+
+        .pic
+            width: 320px
+            height 180px
+            position: absolute
+            z-index: 1;
+            background-image: url(/bundle/icon-logo.png);
+            background-position: center center;
+            background-size: 30% auto;
+            background-color: #ccc;
+            background-repeat: no-repeat;
+            top: 0
+            left 0
+            overflow hidden
+
+            &:nth-child(2)
+            &:nth-child(3)
+                width: 152px
+                height 86px
+                left: auto
+                right: 0
+
+            &:nth-child(3)
+                top: auto
+                bottom: 0
+
+            img
+                position: absolute
+                top: 50%
+                left: 50%
+                transform: translate(-50%, -50%)
+                width: auto
+                height 100%
+
+    &-list
+        .item
+            // display: flex
+            // flex-direction: row
+            border-bottom: 1px #ec4082 dashed
+            // flex-wrap: nowrap
+            // justify-content: space-between
+            padding-top: 20px
+            padding-bottom: 20px
+            flex: 1 auto
+            // align-items: center
+            margin-top: 18px
+
+            .title
+                font-size: 18px
+                line-height: 32px
+                max-height: @line-height
+                overflow hidden
+                font-weight: 600
+                display: flex
+                align-items: baseline
+                padding-left: 1em
+                position relative
+                margin-bottom: 12px
+
+                &:before
+                    content: ''
+                    display: block
+                    width: 4px
+                    height 18px
+                    background-color: titleBeforeBgColor
+                    position: absolute
+                    left 0
+                    top: 6px
+
+                &
+                & a
+                    color: #03114d
+
+            .abs
+                text-indent: 2em
+                color: #999999
+                line-height: 24px
+
+                a
+                    color: absAColor
+            
+
+    

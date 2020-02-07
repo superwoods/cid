@@ -1,0 +1,50 @@
+.nav2
+    width: 100%
+    height auto
+    padding: 12px 0
+    margin: 0 auto
+    background-color: navBgColor
+    background-image: -moz-linear-gradient( -2deg, #5589e6 0%, #3d42dc 100%);
+    background-image: -webkit-linear-gradient( -2deg, #5589e6 0%, #3d42dc 100%);
+    background-image: -ms-linear-gradient( -2deg, #5589e6 0%, #3d42dc 100%);
+
+
+    
+    &-in // .nav-in
+        width: areaWidth
+        height auto
+        display: flex
+        justify-content: space-between
+        align-items: flex-start
+        margin: 0 auto
+
+    .col-title
+        flex: 1 0
+        font-size: 18px
+        line-height: 24px
+        color: #ffffff
+        font-weight: 400
+
+    .btn-box
+        display: flex
+        // justify-content: space-between
+        align-items: flex-start
+        flex-wrap: wrap
+        height auto
+        width 86%
+
+        a
+            // flex: 1 0 auto
+            display: flex
+            align-items: flex-start
+            margin: 0 9px
+            font-size: 14px
+            line-height: 24px
+            color: #ffffff
+
+// is-mobile
+.is-mobile
+    .nav2
+        width: 100%
+        &-in // .nav-in
+            width: 100%

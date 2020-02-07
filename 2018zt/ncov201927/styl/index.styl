@@ -1,0 +1,1096 @@
+/* index.styl */
+@import './configs'
+@import './banner'
+@import './inc/fonts'
+@import './inc/base'
+@import './inc/footer'
+
+@import './nav'
+// @import './inc/topBigTitle'
+
+@import './inc/rotBig'
+
+@import './inc/col1-rot&headline'
+@import './inc/rot'
+@import './rotBox'
+// @import './inc/itemListLeftandRight'
+// @import './inc/rotCol6'
+
+// @import './inc/rot2'
+@import './inc/rotPicTitleAbs'
+
+@import './inc/rot2Box'
+@import './inc/rot3Box'
+
+// .logoBox
+//     logoBoxHeight = 74px
+
+//     border-top: #e8d779 3px solid
+//     height logoBoxHeight
+//     margin-bottom: 22px
+
+//     .logoImg
+//         height logoBoxHeight
+//         width: 239px
+//         background-color: #e8d779
+//         border-bottom-right-radius: 15px
+//         border-bottom-left-radius: 15px
+//         display: flex
+//         justify-content: center
+
+//         img
+//             width: 164px
+//             height 55px 
+
+// .is-mobile
+//     .logoImg
+//         margin: 0 auto
+
+.area
+    width: areaWidth
+    position relative
+    z-index 4
+
+@import './items'
+@import './listBox'
+// @import './rotGallery'
+// @import './inc/memorabilia'
+@import './inc/rotPicABigAndMoreTiny'
+@import './inc/picList'
+
+@import './sp'
+
+@import './inc/is-widthTiny'
+@import './inc/is-mobile'
+
+.isLoadingTxt
+    text-align: center
+    font-size: 20px
+    display: inline-block
+    margin: 40px auto
+
+.isNoContent
+    text-align: center
+    font-size: 20px
+    // display: inline-block
+    margin: 20px auto
+    display: flex
+    justify-content: center
+    
+    a
+        color #999 !important
+        cursor: default
+
+.page
+    background-color: #ffffff
+
+// .is-pc
+//     .bannerTitle
+//         display: none
+
+.more
+    width 100%
+    text-align: right
+    font-size: 18px;
+    font-weight: 600
+    line-height: 32px
+    margin: 0 auto 20px
+
+    &
+    & a
+        color: var(--moo-color)
+
+
+.is-pc
+    .mobile-nav-btn
+        display: none
+
+.is-mobile
+    .nav
+        display: none
+    .mobile-nav-btn
+        width: auto
+        display: flex
+        position: absolute
+        z-index 2
+        top: 30px
+        left: 10px
+
+.panel-backdrop
+    background-color: rgba(#000, 0.3)
+
+.panel-btnBoxbox
+    .block
+        height 100%
+        justify-content: center
+        display: flex
+        flex-direction: column
+        justify-content: center
+
+.panel-btnBox
+    text-align: center
+
+    a
+        width: 70%
+        display: inline-flex
+        align-items: center
+        justify-content: center
+        padding: 6px 20px
+        font-size: 16px
+        height auto
+        line-height: 22px
+        border: 1px rgba(#ff3b30, 0.6) solid
+        border-radius: 6px
+        margin-bottom: 12px
+        color: #ff3b30
+        font-weight: 500
+
+        &.active
+            background-color: var(--f7-theme-color)
+            color: #ffffff !important
+
+
+    .panel-xaLogoA
+        border: none
+        margin-bottom: 30px
+
+        img
+            height 50px
+            width: auto
+
+.st-closeBox   
+    text-align: center
+
+.st-close 
+    margin-top: 20px
+    // margin: 30px auto
+    color: #ff3b30;
+
+.panel-openBtnBox
+    display: inline-block
+    // height 60px
+
+.is-mobile
+    .panel-open
+        // 
+    .topBigTitle
+        width: 90%
+        margin: 0 auto
+
+    .rot
+        &
+        .item
+        .pic
+            height 300px
+
+
+    .col1 
+        .content
+            flex-direction: column
+            height auto
+
+            .right
+                width: 90%
+                margin: 20px auto 0
+                height auto
+        .area
+            padding-top: 0
+            padding-bottom: 30px
+
+        .more
+            margin: 0 6px
+
+
+.isImgList
+    .list
+        display: flex
+        justify-content: space-between
+        flex-wrap: wrap
+        padding: 20px 30px
+        margin: 0 auto
+
+        li
+            flex: 1 auto
+            width: 330px
+            height 200px
+            padding: 0
+            margin: 10px
+
+            &:before
+                display: none
+
+
+        .pic
+            pic()
+
+            &
+            & a
+                width: 100%
+                height 100%
+
+            img
+                img()
+                width: 100%
+                height auto
+        
+        .title
+            title()
+            height auto
+            line-height: 22px
+
+            .text
+                width: 90%
+                margin: 0 auto 6px
+                overflow hidden
+                text-align: center
+
+                &
+                a
+                    font-size: 16px
+                    color: #ffffff
+
+.flex-list
+    .list
+        display: flex
+        justify-content: space-between
+        flex-wrap: wrap
+        width: areaWidth - 200px
+        margin-left: auto
+        margin-right: auto
+        
+        li
+            flex: 1 auto
+            width: 450px
+            margin: 0 10px
+            line-height: 30px
+            padding-left: 15px
+
+            &:before
+                top: 13px
+
+.is-mobile
+    .isImgList
+        width: 100%
+        
+        .list
+            width: 100%
+            padding: 0
+            flex-direction: column
+            height auto
+
+            li
+                width: auto
+                margin-bottom: 14px
+    .flex-list
+        height auto
+        width: 100%
+        margin-top: 0
+        margin-bottom: 30px
+        
+        .list
+            height auto
+            width: 96%
+            margin: 0 auto
+// .gushi
+//     display: block
+//     position relative
+//     width 100%
+//     height 419px
+//     margin-bottom: 30px
+//     background-image: url(bottomBg.png)
+//     background-position: center center
+//     background-size: 100% 100%
+
+//     .abs
+//         position: absolute
+//         color: #ffffff
+//         font-size: 14px;
+//         line-height: 1.786;
+//         position: absolute;
+//         left: 500px;
+//         top: 170px;
+//         width: 600px;
+//         z-index: 2;
+//         font-weight: 400
+
+
+
+// .spaColTitle
+//     // width: 86%
+//     margin: 1em auto
+//     font-size: 28px
+//     // font-weight: 500
+//     color: var(--spa-color-gray3)
+//     padding-bottom: 8px
+//     border-bottom: 1px solid var(--f7-theme-color);
+//     display: flex
+//     align-items: center
+    
+//     &:before
+//         content: ''
+//         display: inline-block
+//         width: 10px
+//         margin-right: 16px
+//         height 32px
+//         background-color: var(--f7-theme-color)
+
+.sp-pc-nav
+    position relative
+    z-index 4
+    border-bottom: 1px var(--moo-color) solid
+    margin-bottom: 45px
+    display: flex
+    justify-content: space-between
+    padding: 10px 0 36px
+    align-items: center
+
+    .line
+        height 19px
+        width: 1px
+        background-color: var(--moo-color)
+        overflow hidden
+
+        &:last-child
+            display: none 
+
+// .navBtn
+//     display: block
+//     width: 40px
+//     height 40px
+//     background-position: center center
+//     background-repeat: no-repeat
+//     // overflow hidden
+//     // text-indent: -888px
+
+        
+.spaColTitle
+    // width: 86%
+    margin: 40px auto 20px
+    font-size: 36px
+    font-weight: 400
+    color: var(--moo-spaColTitle_color)
+    // padding-bottom: 8px
+    // border-bottom: 1px solid var(--f7-theme-color);
+    display: flex
+    justify-content: center
+    align-items: center
+    text-align: center
+    flex-direction: column
+
+    &:after
+        width: 1.8em
+        height 3px
+        content: ''
+        display: block
+        background: var(--moo-spaColTitle_afterBg)
+
+    .navBtn
+        pointer-events: none
+
+    .undefined
+        display: none
+
+    // .middot
+    //     content: ''
+    //     display: inline-block
+    //     width: 5px
+    //     margin: 0 16px
+    //     height 26px
+    //     background-color: var(--f7-theme-color)
+    //     border-radius: 100%
+
+    // &:before
+    //     content: ''
+    //     display: inline-block
+    //     width: 10px
+    //     margin-right: 16px
+    //     height @width
+    //     background-color: var(--f7-theme-color)
+    //     border-radius: 100%
+
+.is-mobile
+    .spaColTitle
+        // width: 86%
+        margin: 20px auto 10px
+
+        &:after
+            background: #cccccc
+
+.spArea2
+    display: flex
+    justify-content: space-between
+    // min-height: 400px
+    align-items: flex-start 
+
+    .colA
+        width: 100%
+        height 100%
+
+    .items-col
+        width: 100%
+    
+    .area
+        flex: 1 0
+        width 46%
+
+    .more
+        .colA
+            width: auto
+
+    .listBox
+        position relative
+        width: 76%
+        margin: 0 auto
+
+        .more
+            margin-top: 5px
+
+    .picBox
+        position relative
+        width: 100%
+        height 260px
+        overflow hidden
+        border-radius: 4px
+
+        .text
+            position: absolute;
+            width: 100%;
+            bottom: 0;
+            left: 0;
+            z-index: 2;
+            background: linear-gradient(to bottom, rgba(0,0,0,0) 0%, #000 100%);
+            height: 40px;
+            line-height: @height
+            font-weight: 600
+
+            &
+            & a
+                text-align: center
+                margin: 0 auto
+                color: #ffffff
+                font-size: 16px
+
+            a
+                display: inline
+
+    .pic
+        width: 100%
+        height 100%
+        z-index 1
+
+        a
+            width: 100%
+            height 100%
+
+        img
+            img()
+            width: 100%
+            height auto
+
+    .list
+        margin: 20px 0 0
+        min-height: 152px
+
+    .title
+        overflow: hidden;
+        text-overflow: ellipsis;
+        white-space: nowrap;
+
+
+.is-pc
+    .col-ying-box
+        .area
+            margin-top: -30px
+            .more
+                width: 80%
+                margin-top: 0
+                margin-right: 20px
+                margin-bottom: 20px
+
+// .spBox-yi-bg
+//     background-image: url(col-yi-bg.png)
+//     background-repeat: no-repeat
+//     background-position: center center
+
+
+.spBox-yi
+    .content
+        width: 100%
+        margin: 0 auto
+        // padding: 30px 60px
+        // background-image: url(col-yi-border.png)
+        // background-repeat: no-repeat
+        // background-position: center center
+        // background-size: 100% 100%
+
+    .rotBigWithAbs, 
+    .rotBigWithAbs .item, 
+    .rotBigWithAbs .pic
+        width: 100%
+
+    .rotBigWithAbs
+        rotBigWithAbsHeight = 770px
+        rotBigWithAbs_liHeight = 600px
+
+        height rotBigWithAbsHeight
+        background: none
+        
+        .item
+            height rotBigWithAbsHeight
+
+            li
+                height rotBigWithAbs_liHeight
+                position relative
+                background-color: #ccc;
+                border-radius: 4px;
+                overflow hidden
+
+            .title
+                padding-bottom: 6px
+                &
+                & a
+                    font-size: 22px
+                
+                a
+                    background-image: url(icon-play.png)
+                    background-position: 10px 4px
+                    background-repeat: no-repeat
+                    padding-left: 65px
+                
+                .text
+                    text-align: left
+                    margin-left: 5px                    
+
+        .swiper-button-prev
+        .swiper-button-next
+            margin-top: -130px
+            color: var(--moo-swiper-button)
+
+        // .swiper-pagination-bullet
+        //     background-color: #cccccc
+        //     &-active
+        //         background-color: red
+
+        .swiper-pagination
+            width: auto
+            bottom auto
+            top rotBigWithAbs_liHeight - 41px
+            right: 10px
+            left auto
+
+        .rotBigWithAbs-colTitle
+            position: absolute
+            border-left: 4px red solid 
+            z-index 99
+            left: 0
+            top: rotBigWithAbs_liHeight
+            height 132px
+            width: 62px
+            margin-top: 20px
+            background-color: #ffffff
+            background-image: url(col-nrjs.png)
+            background-position: center center
+            background-repeat: no-repeat
+
+        .abs
+            margin-top: 20px
+            margin-left: 90px
+            font-size: 18px
+            line-height: 34px
+
+    .more
+        // width: 90%
+        margin-top: 0
+
+
+
+
+
+
+
+.spBox3
+    .content
+        width 90%
+        margin: 0 auto
+
+        .title
+            // font-size: 24px
+            font-weight: 400
+
+.spBox4
+    background-image: url(col-xue-bg.png)
+    background-repeat: no-repeat
+    background-position: center 80%
+
+    .content
+        width 90%
+        margin: 0 auto
+        display: flex
+        justify-content: space-between
+        flex-wrap: wrap
+
+        .item
+            width: 40%
+            align-items: start
+            // min-height: 140px
+
+            &:nth-child(odd)
+                margin-right: 60px
+            
+            .title
+                font-size: 24px
+                font-weight: 400
+
+            .pic
+                display: none
+
+.spBox-yue
+    min-height 660px
+    background-image: url(col-yue-bg.png)
+    background-position: center center
+    background-repeat: no-repeat
+
+    .more
+        width auto
+        margin-top: -80px
+        // padding-right: 100px
+
+.spBox-yue-listBox
+    margin: 0 auto
+    width: 1000px
+    display: flex
+    justify-content: center
+    background-image: url(col-yue-table.png)
+    background-repeat: no-repeat
+    background-position: center bottom
+    background-size: 100% auto
+    padding-bottom: 140px
+    padding-top: 20px
+
+    .isNoContent
+        height: 310px;
+        display: flex
+        align-items: center
+        margin: 0 auto
+
+    li
+        width: 250px
+        height 310px
+        position relative
+
+        a
+            width: 100%
+            height 100%
+
+        .text
+            position: absolute
+            top: 0
+            left 0
+            width 100%
+            font-size: 26px
+            line-height: 40px
+            font-weight: 400
+
+        .pic
+            width: 70%
+            height 250px
+            top: auto
+            bottom: 0
+            left 50%
+            transform: translateX(-50%)
+            background: none
+
+            img
+                width: auto
+                height 100%
+                display: block
+                top: auto
+                bottom: 0
+                box-shadow: 2px 0 9px rgba(#000000, 0.3)
+
+    li+li
+        margin-left: 45px
+
+.listHasImg .listBox .list#addDataListPos11212917 li
+    overflow: visible
+    .pic
+        overflow: visible
+        &
+        & a
+            width: 160px
+            background: none
+
+        img
+            box-shadow: 0 3px 6px rgba(#000000, 0.3)
+
+
+.topLogo
+    display: block
+    position: absolute
+    width: 136px
+    height 60px
+    background-image: url(/bundle/icon-logo.png)
+    background-repeat: no-repeat
+    background-position: center center
+    background-size: 100% auto
+    top: 10px
+    right 20px
+    // transform: translateX(365px)
+
+    span
+        display: none
+
+.is-mobile
+    
+    // .banner
+    //     height 470px
+        
+    //     &:after
+    //         // content: '<< 返回首页'
+    //         // position: absolute
+    //         // z-index 1
+    //         // width: 100px
+    //         color #000000
+    //         // font-size: 16px
+    //         left: 5px
+    //         bottom: 20px
+    //         // font-weight: 400
+
+    // .banner-bg
+    //     background-position: center 0;
+    //     background-size: auto 80%;
+    //     background-image: url(banner.png);
+    //     min-height: auto
+
+    .topLogo
+        transform: translateX(0);
+        left auto
+        right: 20px
+        top: 0
+        width: 100px
+
+    // .bannerTitle
+    //     display: block
+    //     width 90%
+    //     height auto
+    //     margin-top: 30px
+
+    // .spBox-yi 
+    //     mob_rotBigWithAbsHeight = 710px
+    //     .rotBigWithAbs
+    //         overflow: visible
+    //         height mob_rotBigWithAbsHeight
+    //         .item
+    //             height mob_rotBigWithAbsHeight - 10px
+    //             li
+    //                 height 220px
+
+    //             .title
+    //                 padding-top: 10px
+    //                 // padding-bottom 0
+    //                 height 40px
+    //                 &
+    //                 a
+    //                     font-size: 16px
+    //                     line-height: 20px
+    //                 a
+    //                     background-position: 4px center
+    //                     background-size: auto 80%
+    //                     padding-left: 50px
+    //                     height 40px
+
+    //     .rotBigWithAbs-colTitle
+    //         top: 228px
+    //         // bottom: 20px
+    //         width: 40px
+
+    //     .more
+    //         margin-top: -15px
+    //     .abs
+    //         margin-left: 60px
+    //         margin-right: 10px
+
+    .rotBig 
+        .swiper-pagination
+            display: block
+            width: auto;
+            bottom: -10px;
+            top: auto;
+            right: auto;
+            left: 50%;
+            transform: translateX(-50%)
+        
+            .swiper-pagination-bullet
+                background-color: #cccccc
+            .swiper-pagination-bullet-active
+                background-color: var(--moo-color)
+
+    .more
+        .colA
+            justify-content: flex-end;
+
+    .spBox1
+        width: 100%
+    .spArea
+        width: 100%
+        padding-left: 0
+        padding-right: 0
+    .spaColTitle
+        margin-left: 20px
+    .mobile-nav-btn
+        display: none
+
+    .picListBox
+    .picList
+        width: 100%
+
+    .picList
+        li
+            margin-right: 20px
+            margin-left: 20px
+            width 100%
+
+
+.picTitleAbsAndList
+    .content
+        display: flex
+        position relative
+        justify-content: space-between
+
+    &-left // .picTitleAbsAndList-left
+        display: flex
+        position relative
+        justify-content: space-between
+        flex: 1 0
+
+        .item
+            width: 350px
+
+            .pic
+                height 197px
+                position relative
+                margin-bottom: 10px
+                border-radius: 4px
+                overflow hidden
+                
+                img
+                    width 100%
+                    height auto
+            .title
+                font-size: 16px
+                font-weight: 400
+                margin-bottom: 10px
+                
+            .abs
+                font-size: 14px
+                color: #666
+        
+        .item+.item
+            margin-left: 20px
+            padding-left: 20px
+            // height 100%
+            // border-left: #cccccc 1px solid
+                
+    &-right // .picTitleAbsAndList-right
+        flex: 1 1
+        margin-left: 30px
+        padding-left: 20px
+        // border-left: #cccccc 1px solid
+        height 100%
+
+        .list
+            margin: 0
+
+.is-mobile
+    .picTitleAbsAndList
+        width: 100%
+        .content
+            display: block
+
+        &-left // .picTitleAbsAndList-left
+            display: block
+
+            .item
+                width: 94%
+                margin: 0 auto
+
+                .abs
+                    margin-bottom: 10px
+            
+            .item+.item
+                margin-left: auto
+                padding-left: 0
+                // height 100%
+                // border-left: #cccccc 1px solid
+                    
+        &-right // .picTitleAbsAndList-right
+            margin-left: auto
+            margin-right: auto
+            padding-left: 0
+            width: 94%
+
+    .rotBig
+        overflow: visible
+        .swiper-pagination
+            display: none
+        .item 
+            .title
+                padding-bottom: 0
+
+.picList4
+    li
+        width: 23%
+        margin-right: 20px
+        background-color: #f3f3f3
+        border-radius: 4px
+
+        .text
+            margin: 6px 10px
+
+        .pic // .picList4 li .pic img
+            border-bottom-left-radius: 0
+            border-bottom-right-radius: 0
+
+            &:before
+            &:after
+                display: none
+            img 
+                img()
+                width: auto
+                height: 100%
+                
+
+.is-mobile
+    .picList4 li .pic
+        height 200px
+
+.rotBigBox
+    margin-bottom: 60px
+
+
+
+.rotPicTitleAbsAddSidebar
+    rotPicTitleAbsAddSidebarHeight = 390px
+
+    .rotPicTitleAbs
+        width: 1000px
+        height: rotPicTitleAbsAddSidebarHeight
+
+    .rotPicTitleAbsBox
+        display: flex
+        justify-content: space-between
+    
+    .sidebar
+        width: 250px
+        height rotPicTitleAbsAddSidebarHeight
+
+        .pic
+            pic()
+            width: 100%
+            height: rotPicTitleAbsAddSidebarHeight
+            position relative
+            background-size: auto 40px
+
+            a
+                width: 100%
+                height 100%
+
+            img
+                img()
+                width: auto
+                height 100%
+
+    .item-picTitleAbs
+        .pic
+            pic()
+            position: relative;
+            width: 500px
+            height: 300px
+            border-radius: 4px
+            overflow: hidden
+
+            a
+                width: 100%
+                height 100%
+            img
+                img()
+                width: auto
+                height 100%
+
+.is-mobile
+    .rotPicTitleAbsAddSidebar
+    
+        .rotPicTitleAbs
+            width: 90%
+            height: 500px
+
+        .rotPicTitleAbsBox
+            display: block
+            height auto
+            // justify-content: space-between
+        
+        .sidebar
+            mob_sidebarHeight = 452px
+
+            width: 90%
+            height mob_sidebarHeight
+            margin: 10px auto 0
+
+            .pic
+                pic()
+                width: 100%
+                height: mob_sidebarHeight
+                position relative
+                background-size: auto 40px
+
+                a
+                    width: 100%
+                    height 100%
+
+                img
+                    img()
+                    width: auto
+                    height 100%
+
+        .item-picTitleAbs
+            .pic
+                pic()
+                position: relative;
+                width: 100%
+                height: 200px
+                border-radius: 4px
+                overflow: hidden
+                border-bottom-left-radius: 0
+                border-bottom-right-radius: 0
+
+                a
+                    width: 100%
+                    height 100%
+                img
+                    img()
+                    width: auto
+                    height 100%
+
+        .textBox
+            padding-bottom: 40px
+            display: flex
+            justify-content: center
+            align-items: center
+
+    .rotBigBox
+        width 100%
+        overflow hidden
+
+.spBox1 
+    .topBigTitle
+        width auto
+        position relative
+        z-index 99
+        padding-top: 40px
+        padding-bottom: 30px
+
+.col1
+    .area
+        padding-top: 0
+
+

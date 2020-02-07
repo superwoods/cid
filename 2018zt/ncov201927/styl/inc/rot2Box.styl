@@ -1,0 +1,193 @@
+
+rot2Width = 1000px
+rotHeight = 260px
+rot2ItemBoxHeight = rotHeight
+
+.rot2BoxBox
+    // padding: 36px 0
+    margin-bottom: 20px
+    .more
+        margin-top: 10px
+
+.rot2Box
+    position: relative
+    width: (rot2Width + 60px * 2)
+    height rot2ItemBoxHeight
+    margin: 20px auto 0
+    
+    .rot2
+        width: rot2Width
+        height rotHeight
+        margin: 0 auto
+        // border: 1px #ffffff solid
+
+    .rot2-prev
+    .rot2-next
+        color: var(--moo-color)
+        outline: none 
+
+    .rot2-prev
+        // 
+    .rot2-next
+        margin-right: 0
+
+    .rot2-pagination
+        left: 50%
+        transform: translateX(-50%)
+        // width: 50%
+        // border: 1px solid #ffffff
+
+        .swiper-pagination-bullet
+            outline: none
+            width: 60px
+            height 4px
+            border-radius: (@height / 2)
+            background-color: #e4e4e4
+            opacity 1 
+
+        .swiper-pagination-bullet-active
+            background-color: var(--moo-color)
+
+        .swiper-pagination-bullet+.swiper-pagination-bullet
+            margin-left: 6px
+
+
+    .itemBox
+        display: flex
+        flex-direction: row
+        // align-items: center
+        justify-content: space-between
+        position relative
+        height rot2ItemBoxHeight
+        overflow hidden
+        background-color: var(--moo-itemBoxBg)
+        border-radius: 4px
+
+        &:after
+            width: 0;
+            height: 0;
+            border-style: solid;
+            border-width: 0 0 46px 46px;
+            border-color: transparent transparent #667d92 transparent;
+            content: ''
+            position: absolute
+            right: 0
+            bottom: 0
+            pointer-events: none
+
+        .pic
+            pic()
+            position relative
+            flex: 0 1 auto
+
+            &
+            & a
+                width 200px
+                height 100%
+
+            img
+                img()
+                height 100%
+                width: auto
+
+        .title
+            flex: 1 0
+            title()
+            width auto
+            background: none
+            position: static
+            margin: 0 20px
+            display: flex
+            flex-direction: column
+            align-items: center
+            justify-content: center
+            position relative
+            height 100%
+
+            &
+            & a 
+                color #333333
+            
+            a:hover
+                color: var(--moo-color) !important
+
+            .text
+                text()
+                font-size: 22px
+                line-height: 30px
+                margin-bottom: 12px
+                font-weight: 400
+                max-height (@line-height * 2)
+                overflow hidden
+                text-align: left 
+
+            .abs
+                width 90%
+                line-height: 24px
+                font-size: 14px
+                font-weight: 400
+                height (@line-height * 4)
+                min-height: @height
+                overflow hidden
+                color: #999999
+    
+
+.rot2BoxNoPic
+    rot2ItemBoxHeight_2 = 280px
+    &
+    & .rot2
+        height rot2ItemBoxHeight_2
+
+    .itemBox
+        // display: flex
+        // flex-direction: column
+        // align-items: center
+        // justify-content: space-between
+        // position relative
+        height rot2ItemBoxHeight_2
+        .pic
+            display: none
+
+
+.is-mobile
+    .rot2-prev
+    .rot2-next
+        display: none
+
+    .rot2-pagination
+        // left: 50%
+        // transform: translateX(-50%)
+
+        .swiper-pagination-bullet
+            // outline: none
+            width: 20px
+            // height 4px
+            // border-radius: (@height / 2)
+            // background-color: #e4e4e4
+            // opacity 1 
+
+        // .swiper-pagination-bullet-active
+        //     background-color: #c30e11
+
+        .swiper-pagination-bullet+.swiper-pagination-bullet
+            margin-left: 3px
+
+    .rot2BoxBox
+        padding: 0
+        margin-bottom: 0
+
+    .rot2Box
+        width: auto
+
+        .rot2
+            width: 100%
+
+    .more
+        width: 90%
+
+    .rot2Box .itemBox .pic img
+        height 100%
+        width: auto
+    
+                
+

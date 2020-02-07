@@ -1,0 +1,52 @@
+.page
+	.page-content
+		include ./inc/bannerAndNav.pug
+
+		//- <!-- rotBig START -->
+		//- .area
+		//- 	a(href="/video/" class="colA link") 
+		//- 		.items-col.items-col1(tips="精彩视频 | 栏目ID: 11206397 | 信息片ID: 11206759")
+		//- 			.hide 精彩视频
+
+		//- include ./inc/rotGallery
+		//- <!-- rotBig END -->
+
+		<!-- items START 精彩视频 -->
+		.area.imgList
+			a(href="/" class="colA link") 
+				.items-col.items-col1(tips="精彩视频	栏目ID: 11206397	信息片ID: 11206759")
+					.hide 精彩视频
+
+			.listBox
+				ul.list(data-cid="11206397")
+					each val in [1,2,3,4,5,6,7,8,9,10,11,12]
+						li
+							.pic
+								a(href="#" target="_blank")
+									img(src= 'demo/demo4.png')
+							.text
+								a(href="#") 一二三四五六七八九十一二三四五六七八九十一二三四五六七八九十一二三四五六七八九十
+							//- .subTitle 
+								//- | 推荐单位：
+								//- br
+								| https://vodpub2.v.news.cn/original/20190619/8d5207781a6b4bc1995193db4ad073c4.mp4
+			.listBoxMoreBtnBox
+				.listBoxMoreBtn#addData 查看更多
+
+			//- <div class="block page-content-moreBtnBox">
+			//- 	<div class="row">
+			//- 		<button class="col-50 button button-outline button-large button-round addMore">查看更多</button>
+			//- 	</div>
+			//- </div>				
+							
+		<!-- items END 精彩视频 -->
+
+		<!-- demo footer START -->
+		include ./inc/footer
+		<!-- demo footer END -->
+
+		<!-- include virtual="/2018zt/ssi_2018zt_footer.htm" START --> 
+		<!--#include virtual="/2018zt/ssi_2018zt_footer.htm" --> 
+		<!-- include virtual="/2018zt/ssi_2018zt_footer.htm" END --> 
+
+		

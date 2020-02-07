@@ -1,0 +1,244 @@
+.schedule
+    scheduleBgColor = #dec58b
+    scheduleHeight = 272px
+    scheduleOuterHeight = scheduleHeight + 179px
+    todoListWidth = 78%
+    todoListLineheight = 30px
+    todoListFontsize = 14px
+
+
+
+    height scheduleOuterHeight
+    
+    .bg-white
+        width 287px
+
+    .area
+        height scheduleOuterHeight
+        
+    .col-bg-box
+        margin-bottom: 45px
+
+    .schedule-box
+        display: flex
+        height scheduleHeight
+
+        .item
+            display: flex
+            width: 107px
+            position relative
+            overflow hidden
+            border-right: 10px #ffffff solid 
+            transition: all 1s;
+
+            &:last-child
+                border: none
+
+            .year-box
+                cursor pointer
+                width: 100%
+                position absolute
+                left: 0
+                top: 0
+                height 100%
+                z-index 2
+                // background-color: linear-gradient(to bottom, rgba(255,255,255,0) 0%,rgba(222,197,139,1) 100%)
+                background-image: url(schedule-col-bg.png)
+                background-position: 0 0
+                background-repeat: repeat-x
+                transition: all 1s;
+
+                &:before
+                    content: ''
+                    display: block
+                    width: 0;
+                    height: 0;
+                    border-style: solid;
+                    border-width: 41px 41px 0 0;
+                    border-color: scheduleBgColor transparent transparent transparent
+                    position: absolute
+                    top: 0
+                    left: 0
+                    right: auto
+                    z-index 2
+
+                &:after
+                    content: ''
+                    display: block
+                    width: 0;
+                    height: 0;
+                    border-style: solid;
+                    border-width: 51px 51px 0 0;
+                    border-color: #ffffff transparent transparent transparent
+                    position: absolute
+                    top: 0
+                    left: 0
+                    right: auto
+                    z-index 1
+                
+                yearTop = 185px
+                yearHeight = 46px
+
+                .year
+                .date-box
+                    background-color: #ffffff
+                    position: absolute
+                    left: 50%
+                    transform: translateX(-50%)
+                    width: 86px
+                    font-weight: 600
+
+                .year // .schedule .schedule-box .item .year-box .year
+                    top: yearTop
+                    height yearHeight
+                    line-height: @height 
+                    font-size: 36px
+                    text-align: center
+                    transition: all 1s
+                    font-style: italic
+                    color: #dec58b
+
+                .date-box
+                    top: yearTop + yearHeight
+                    text-align: right 
+                    color: #050b25
+                    line-height: 24px
+                    height: 28px
+                    font-size: 0
+                    transition: height 1s;
+
+                    .month // 没有激活的日期控制
+                    .day
+                        display: inline
+                        font-size: 16px
+                        transition: all 1s;
+                        color: #a1a1a1
+
+                    .day
+                        margin-right: 5px
+            
+            .todo-list
+                height 100%
+                width: todoListWidth
+                position absolute
+                right: 0
+                top: 0
+                background-color: #f5f5f5
+                opacity 0
+                transition: all 1s;
+
+                &-in //.todo-list-in
+                    margin: 18px 30px 18px 60px
+
+                
+                .i //.schedule .schedule-box .item .todo-list .i
+                    font-size: todoListFontsize
+                    line-height: todoListLineheight
+                    display: flex
+                    justify-content: left
+                    
+                    &:hover
+                        background-color: #e8e8e8
+
+                    .todo-date
+                        margin-right: 10px
+                        width: 100px
+                        padding-left: 36px
+                        position relative
+                        font-style: italic
+
+                        &:before
+                            position: absolute
+                            content: ''
+                            display: inline-block
+                            width: 10px
+                            height: @width 
+                            background-color: dotColor
+                            left: 6px
+                            top: 12px
+
+                    .todo-title
+                        flex: 1
+                        max-height: todoListLineheight * 2
+                        overflow hidden
+                        font-weight: 600
+
+
+        .item.active
+            width: 770px
+            
+            yearBoxAfterTop = 15px
+            yearBoxAfterRight = -22px
+
+            .year-box //.schedule .schedule-box .item.active .year-box
+                width: 127px
+                background-color: scheduleBgColor
+                background-image: url(schedule-col-icon.png)
+                background-position: 13px 128px
+                background-repeat: no-repeat
+
+                &:before
+                    content: ''
+                    display: block
+                    width: 0;
+                    height: 0;
+                    border-style: solid;
+                    border-width: 15px 0 15px 22px;
+                    border-color: transparent transparent transparent scheduleBgColor
+                    position: absolute
+                    top: yearBoxAfterTop
+                    right: yearBoxAfterRight
+                    left: auto
+
+                &:after
+                    display: none
+
+                .year
+                    display: none
+                    
+                .date-box
+                    width auto
+                    background: none
+                    position: static
+                    transform: translateX(0)
+
+                    monthTop = 38px
+                    monthLeft = 10px
+
+                    .month // 激活的日期控制
+                    .day
+                        color: #ffffff
+                        font-weight: 800
+                        position: absolute
+                        display: block
+
+                    .month 
+                        font-size: 42px
+                        top: monthTop
+                        left: monthLeft
+                    .day
+                        width: 55px
+                        font-size: 16px
+                        top: monthTop + 10px
+                        left: monthLeft + 55px
+                        text-align: center
+
+            .todo-list
+                opacity 1
+                right: 0
+
+                &:before
+                    content: ''
+                    display: block
+                    width: 0;
+                    height: 0;
+                    border-style: solid;
+                    border-width: 20px 0 20px 32px;
+                    border-color: transparent transparent transparent #ffffff
+                    position: absolute
+                    top: yearBoxAfterTop - 5px
+                    left: yearBoxAfterRight + 18px
+
+.windows .schedule .schedule-box .item .year-box .year
+    font-size: 30px
+    text-align: left
