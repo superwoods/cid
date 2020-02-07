@@ -1,7 +1,7 @@
 const sortCidTxt = (txt) => {
     let resultArray = '';
     txt.split('\n').map((e, i) => {
-        let _array = e.split(/\｜/);
+        let _array = e.split(/\｜|\|/);
 
         console.log(_array);
 
