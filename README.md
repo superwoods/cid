@@ -1,4 +1,4 @@
-# cid 生成工具
+# cid Array Builder
 
 input demo
 
