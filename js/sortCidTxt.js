@@ -10,9 +10,8 @@ const sortCidTxt = (txt) => {
     name: '${(_array[0]).replace(/^\s+|\s+$/g, "")}',
     cid: ${_array[1] - 0},${_array[2] && _array[2] - 0 > 0 ? `\n    nid: ${_array[2] - 0},` : ''}
     nav: true,
-    isHomepageChn: true,
-    isBlank: false,
-    mod: "--"
+    isPage: true,
+    isBlank: false
 },`;
     });
 
