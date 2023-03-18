@@ -1,10 +1,15 @@
+// 用于将文本转换为json格式     2018-11-15 17:00:00
+// 在safari浏览器中运行有问题，需要在chrome中运行
+
 const sortCidTxt = (txt) => {
     let resultArray = '';
 
     txt.split('\n').map((e, i) => {
-        let _array = e.split(/\｜|\|/);
+        console.log('e:', e);
 
-        console.log(_array);
+        let _array = e.split(/\||\｜/);
+
+        console.log('_array:', _array);
 
         resultArray += `{
     name: '${(_array[0]).replace(/^\s+|\s+$/g, "")}',
@@ -15,7 +20,7 @@ const sortCidTxt = (txt) => {
 },`;
     });
 
-    console.log(resultArray);
+    // console.log(resultArray);
 
     $('.json').html(`const cid = [
     ${resultArray}
@@ -25,3 +30,5 @@ const sortCidTxt = (txt) => {
 $('.in').on('input', function () {
     sortCidTxt($(this).val());
 });
+
+sortCidTxt($('.in').val());
